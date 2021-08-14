@@ -82,7 +82,7 @@
               <select name="pangkat" class="form-control col-sm-10">
                 <option value="">Pilih Pangkat</option>
                 <?php
-                  include "koneksi.php";                
+                  include "koneksi.php";
                   $tampil = mysqli_query($mysqli, "select * from tb_pangkat");
                   $no = 1;
                   while($hasil = mysqli_fetch_array($tampil)){
@@ -101,7 +101,7 @@
               <select name="gaji" class="form-control col-sm-10">
                 <option value="">Pilih Gaji</option>
                 <?php
-                  include "koneksi.php";                
+                  include "koneksi.php";
                   $tampil = mysqli_query($mysqli, "select * from tb_pangkat");
                   $no = 1;
                   while($hasil = mysqli_fetch_array($tampil)){
@@ -120,7 +120,7 @@
                 <select name="tipe" class="form-control col-sm-10">
                   <option value="">Pilih Tipe Pegawai</option>
                   <?php
-                    include "koneksi.php";                
+                    include "koneksi.php";
                     $tampil = mysqli_query($mysqli, "select * from tb_tipepegawai");
                     $no = 1;
                     while($hasil = mysqli_fetch_array($tampil)){
@@ -129,7 +129,7 @@
                   <?php echo $hasil['nama_tipe']; ?>
                   </option>
                   <?php } ?>
-                </select> 
+                </select>
               </div>
             </div>
             <hr>
@@ -139,7 +139,7 @@
                 <select name="slip" class="form-control col-sm-10">
                   <option value="">Pilih Slip Gaji</option>
                   <?php
-                    include "koneksi.php";                
+                    include "koneksi.php";
                     $tampil = mysqli_query($mysqli, "select * from tb_slipgaji");
                     $no = 1;
                     while($hasil = mysqli_fetch_array($tampil)){
@@ -152,7 +152,7 @@
               </div>
             </div>
 
-            <hr>          
+            <hr>
           <button type="submit" class="btn btn-primary">Simpan</button>
           <button type="reset" class="btn btn-warning">Reset</button>
 
